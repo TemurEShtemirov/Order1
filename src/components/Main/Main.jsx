@@ -26,38 +26,46 @@ export default function Main() {
             <div className="container">
               <div className="hero__img-box">
                 {/* <img src={HeroImg} alt="hero image" className="hero__img " /> */}
-               <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src={HeroImg} className="d-block w-100 hero__img" alt="CorulseImg" />
-    </div>
-    <div className="carousel-item">
-      <img src={HeroImg} className="d-block w-100 hero__img" alt="CorulseImg" />
-    </div>
-    <div className="carousel-item">
-      <img src={HeroImg} className="d-block w-100 hero__img" alt="CorulseImg" />
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true" />
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true" />
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
+
+                <div
+                  id="carouselExampleSlidesOnly"
+                  className="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div className="carousel-inner">
+                    <div className="carousel-item active">
+                      <img
+                        src={HeroImg}
+                        className="d-block w-100 hero__img"
+                        alt={HeroImg}
+                      />
+                    </div>
+                    <div className="carousel-item">
+                      <img width="100%"
+                        src={WorkImg}
+                        className="d-block w-100 hero__img"
+                        alt={WorkImg}
+                      />
+                    </div>
+                    <div className="carousel-item">
+                      <img
+                        src={HeroImg}
+                        className="d-block w-100 hero__img"
+                        alt={HeroImg}
+                      />
+                    </div>
+                  </div>
+                </div>
 
                 <p className="hero__one">01</p>
               </div>
               <div className="hero__box">
                 <h1 className="hero__title">Architecture Studio</h1>
-        
               </div>
             </div>
           </section>
           {/* Our section */}
-          <section className="our">
+          <section className="our" id="dna">
             <div className="container">
               <img src={OurProduct} className="our__img " alt="our image" />
               <div className="our__box">
@@ -77,7 +85,7 @@ export default function Main() {
             </div>
           </section>
           {/* Work section */}
-          <section className="work">
+          <section className="work" id="work">
             <div className="container">
               <h2 className="work__title">Selected Work</h2>
               <p className="work__text">
@@ -136,7 +144,7 @@ export default function Main() {
             </div>
           </section>
           {/* Why us section */}
-          <section className="why-us">
+          <section className="why-us" id="whyus">
             <div className="container">
               <div className="why-us__card">
                 <p className="why-us__text">
@@ -174,7 +182,7 @@ export default function Main() {
             </div>
           </section>
           {/* Blogs section */}
-          <section className="blogs">
+          <section className="blogs" id="blogs">
             <div className="container">
               <h3 className="blogs__title">Lataste Blogs</h3>
               <ul className="blogs__list row">
@@ -214,7 +222,7 @@ export default function Main() {
             </div>
           </section>
           {/* Clients section */}
-          <section className="clients">
+          <section className="clients" id="clienst">
             <div className="container">
               <div className="clients__content">
                 <div className="clients__list">

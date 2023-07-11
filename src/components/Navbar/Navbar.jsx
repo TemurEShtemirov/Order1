@@ -48,10 +48,7 @@ export default function Navbar() {
               {/* <button className="header__btn">
                 <img src={Logo} alt="header-btn" />
               </button> */}
-              <Button
-                onClick={handleShow}
-               className="BtnOffCanvas"
-              >
+              <Button onClick={handleShow} className="BtnOffCanvas">
                 <img src={Logo} alt="header-btn" />
               </Button>
 
@@ -80,11 +77,11 @@ export default function Navbar() {
                       backgroundColor: "rgb(14,27,27)",
                     }}
                   >
-                    <a className="OffCanvasLink" href="dna">
+                    <a className="OffCanvasLink" href="#dna">
                       Our DNA
                     </a>
                     <br />
-                    <a className="OffCanvasLink" href="work">
+                    <a className="OffCanvasLink" href="#work">
                       Select Work
                     </a>
                     <br />
@@ -96,7 +93,7 @@ export default function Navbar() {
                       Lataste Blogs
                     </a>
                     <br />
-                    <a className="OffCanvasLink" href="#clients">
+                    <a className="OffCanvasLink" href="#clienst">
                       Our Clients
                     </a>
                   </Offcanvas.Body>
